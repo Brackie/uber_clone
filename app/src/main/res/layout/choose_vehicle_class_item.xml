@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:background="@color/grey"
+            android:layout_weight="1"
+            android:layout_marginEnd="2dp"/>
+
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_background_grey">
+
+            <ImageView
+                android:id="@+id/vehicle_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/taxi_icon"
+                android:padding="5dp"/>
+
+            <ImageView
+                android:id="@+id/un_select_class"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_action_close_white"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:background="@color/grey"
+            android:layout_weight="1"
+            android:layout_marginStart="2dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/class_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/vehicle_class"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryText"/>
+
+</LinearLayout>

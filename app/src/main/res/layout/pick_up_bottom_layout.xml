@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="56dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:elevation="4dp"
+    tools:showIn="@layout/activity_pick_up">
+
+    <ImageView
+        android:id="@+id/toggle_sheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_action_pull_up"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_gravity="bottom"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/driver_profile_picture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/profile_picture_place_holder"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/white"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|start"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/driver_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/driver_name"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimaryText"/>
+
+                <TextView
+                    android:id="@+id/driver_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/driver_details"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimaryText"/>
+
+                <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                    android:id="@+id/driver_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srb_rating="4.5"
+                    app:srb_numberOfStars="5"
+                    app:srb_starSize="18dp"
+                    app:srb_stepSize="0.5"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/call_driver"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_action_call"
+                android:background="@drawable/round_background_dark"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/payment_method"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:drawableStart="@drawable/paper_money_icon"
+                android:drawablePadding="10dp"
+                android:text="@string/paying_via"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/change_payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/fare_estimate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:drawableStart="@drawable/calculator_icon"
+                android:drawablePadding="10dp"
+                android:text="@string/estimated_fare"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/promo_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawableStart="@drawable/promo_icon"
+                android:drawablePadding="10dp"
+                android:text="@string/promo_code"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/confirm_booking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/confirm_booking"
+            android:textColor="@color/light_grey"
+            android:textAllCaps="false"
+            android:background="@drawable/black_background_button_selector"/>
+
+        <Button
+            android:id="@+id/cancel_booking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/colorPrimaryText"
+            android:textAllCaps="false"
+            android:background="@drawable/solid_curved_white_background_black_outline"/>
+
+    </LinearLayout>
+
+</LinearLayout>

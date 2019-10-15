@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searching_driver_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fading_black"
+    android:gravity="center"
+    android:visibility="gone">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/looking_for_driver"
+        android:textSize="20sp"
+        android:textColor="@color/light_grey"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/searching_driver_foreground"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/search_driver_icon"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/marker_driver"/>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/cancel_getting_driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:fontFamily="@string/san_serif_light"
+        android:layout_margin="20dp"
+        android:background="@drawable/solid_curved_background_red"/>
+
+</LinearLayout>

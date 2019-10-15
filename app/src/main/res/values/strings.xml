@@ -1,0 +1,108 @@
+<resources>
+
+    <!--Fonts-->
+    <string name="san_serif_smallcaps">sans-serif-smallcaps</string>
+    <string name="san_serif_thin">sans-serif-thin</string>
+    <string name="san_serif_medium">sans-serif-medium</string>
+    <string name="san_serif_light">sans-serif-light</string>
+
+    <!--Titles-->
+    <string name="title_activity_home">Home</string>
+    <string name="title_login">Login</string>
+    <string name="title_home">Home</string>
+    <string name="title_payment">Payment</string>
+    <string name="title_history">History</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_help">Help</string>
+    <string name="title_register">Register</string>
+    <string name="title_resetpassword">Reset Password</string>
+
+    <!--Navigation Drawer-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_exit">Exit</string>
+    <string name="edit_profile">Edit Profile</string>
+
+    <!--App-->
+    <string name="app_name">Swoop</string>
+    <string name="names">Names</string>
+    <string name="map_area">Map Area</string>
+    <string name="or">OR</string>
+    <string name="email_or_phone_number">Email or Phone Number</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="log_out">Log Out</string>
+    <string name="email">Email</string>
+    <string name="password_reset_instructions">Seems you forgot your password \nDont worry!Just enter your email ID below\nand well send you the password reset instructions</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="next">Next</string>
+    <string name="verify_phone">Verify Phone</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="verification_instructions">A verification code has been sent to\nor is being sent to your device.\nEnter the code below if it has\nnot been automatically detected</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="submit">Submit</string>
+    <string name="pick_up_location">Pick Up Location</string>
+    <string name="places">Places</string>
+    <string name="driver_name">Driver Name</string>
+    <string name="minutes_away">minutes away</string>
+    <string name="destination">Destination</string>
+    <string name="current_location">Current Location</string>
+    <string name="pick_up">Pick Up Arriving</string>
+    <string name="driver_details">Driver Details</string>
+    <string name="where_to">Where To?</string>
+    <string name="which_of_these_is_your_current_location">Which of these is your current location?</string>
+    <string name="place_name">Place Name</string>
+    <string name="place_address">Place Address</string>
+    <string name="request_ride">Request Ride</string>
+    <string name="title_change_payment_method">Change Payment Method</string>
+    <string name="fare_estimate">Ksh 300 - 400</string>
+    <string name="estimated_fare">Estimated Fare</string>
+    <string name="these_are_estimates">Note: This is an approximate estimate.Actual\nfares may vary slightly based on traffic or discounts</string>
+    <string name="cash">Cash</string>
+    <string name="credit_debit">Credit/Debit</string>
+    <string name="m_pesa">M-Pesa</string>
+    <string name="change">Change</string>
+    <string name="paying_via">Paying Via : </string>
+    <string name="promo_code">Promo Code</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="vehicle_class">Class</string>
+    <string name="title_review_trip">Review Trip</string>
+    <string name="calculated_fare">Ksh. 350</string>
+    <string name="date_example">24 July 2018 at 4:00 pm</string>
+    <string name="write_your_comment">Write Your Comment</string>
+    <string name="need_help">Need Help?</string>
+    <string name="end_ride">End Ride</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="looking_for_driver">Looking for Driver…</string>
+    <string name="no_internet_connection">No Internet Connection\n(Please turn on your internet connection to proceed)</string>
+    <string name="ride_cancelled">Ride Cancelled</string>
+    <string name="select_your_reason_s_for_cancelling">Select your reason(s) for cancelling</string>
+    <string name="reason">Reason</string>
+    <string name="write_your_own">Write your own</string>
+    <string name="minimum_charge">Note: A minimum charge of\nKsh.150 is charged even after cancellation</string>
+    <string name="were_sorry_you_couldn_t_complete_your_ride">Were sorry you couldn\'t complete your ride</string>
+    <string name="points">Points</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="amount">Amount</string>
+    <string name="date">Date</string>
+    <string name="rating">Rating</string>
+    <string name="title">Title</string>
+    <string name="info">Info</string>
+    <string name="contact_us_on">You could contact us on</string>
+    <string name="help_and_feedback">Help And Feedback</string>
+    <string name="contact_info">
+        Offices :\nUnder Construction(Coming soon)\n\n
+        Email :\nswoopapp18@gmail.com\n\n
+        Telephone :\n77349\n\n
+        Mobile :\n+254700370101\n+254719437933\n+254722901642\n+254716738787\n+254713398529
+    </string>
+    <string name="email_us">Or email us directly</string>
+    <string name="write_email_here">Write email here</string>
+    <string name="swoop_email">swoopapp18@gmail.com</string>
+
+</resources>

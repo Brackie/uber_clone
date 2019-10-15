@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_places_list"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="15dp"
+        android:paddingTop="45dp"
+        android:visibility="gone">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/search_location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:background="@drawable/solid_curved_background_white">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:padding="5dp"
+            android:src="@drawable/ic_action_location"/>
+
+        <EditText
+            android:id="@+id/search_pickup_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:background="@color/white"
+            android:gravity="center|start"
+            android:hint="@string/where_to"
+            android:textColorHint="@color/colorPrimaryText"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</FrameLayout>
